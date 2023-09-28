@@ -76,7 +76,7 @@ if uploaded_file is not None:
 # Define function to generate response from user input
 def generate_response(input_text):
     # Define the prompt for GPT-3.5
-    prompt = f"You are given a user input: '{input_text}'. Please provide a one word response. Determine if the user inpit is asking for a "
+    prompt = f"You are given a user input: '{input_text}'. Please provide a one word response. Determine if the user input is asking for a visualization or analytical query."
 
     # Generate a response using GPT-3.5
     response = openai.Completion.create(
